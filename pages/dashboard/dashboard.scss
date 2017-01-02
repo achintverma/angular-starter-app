@@ -1,0 +1,36 @@
+#dashboard{
+	display: flex;
+	align-items: flex-start;
+	flex-flow: row wrap;
+
+	h1{
+		width: 100%;
+		padding: 20px;
+		font-weight: 100;
+		text-align: center;
+	}
+
+	.program{
+		width: 50%;
+		margin: auto;
+		text-align: center;
+		cursor: pointer;
+		text-decoration: none;
+		margin-bottom: 20px;
+
+		h2{
+			color: #fff;
+			font-size: 16px;
+			font-weight: 400;
+		}
+
+		img{
+			width: 80px;
+			transition: opacity 1s ease;
+		}
+	}
+
+	.program:hover{
+		opacity: 0.8;
+	} 
+}

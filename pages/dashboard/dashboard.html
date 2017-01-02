@@ -1,0 +1,7 @@
+<div id="dashboard">
+	<h1 class="heading">Jiff Programs</h1>
+	<a ng-repeat="program in $ctrl.programs" href="#!/details/{{program.guid}}" class="program" >
+		<img ng-src="{{program.icon_url}}">
+		<h2>{{program.title}}</h2>
+	</a>
+</div>

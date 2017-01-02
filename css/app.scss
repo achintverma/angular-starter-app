@@ -1,0 +1,12 @@
+$primary-color: #211d52;
+$secondary-color: #43a8f5;
+
+$font-stack: 'Lato', sans-serif;
+
+body{
+	margin:0;
+	padding: 0;
+	font-family: $font-stack;
+	background-color: $primary-color;
+	color: #fff;
+}

@@ -1,0 +1,25 @@
+<div id="details">
+	
+	<div class="header">
+		<a href="#!/dashboard" class="back"></a>
+		{{$ctrl.program.title}}
+	</div>
+	<div class="program-detail">
+		<img ng-src="{{$ctrl.program.icon_url}}">
+		<h1 class="heading">{{$ctrl.program.title}}</h1>
+		<span class="incentive" ng-if="$ctrl.incentive > 0">Earn Up to ${{$ctrl.incentive}}</span>
+		
+		<p>{{$ctrl.program.description}}</p>
+
+		<p ng-if="$ctrl.program.incentive_description">{{$ctrl.program.incentive_description}}</p>
+
+
+		<div class="goals" ng-if="$ctrl.goals.length > 0">
+			<h2>Program Goals</h2>
+			<div class="goal-item" ng-repeat="goal in $ctrl.goals">
+				<h5>{{goal.title}}</h5>
+				<span>${{goal.incentive_value}}</span>
+			</div>
+		</div>
+	</div>
+</div> 

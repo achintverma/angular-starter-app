@@ -1,0 +1,29 @@
+{
+  "name": "jiff",
+  "version": "1.0.0",
+  "description": "Jiff Boilerplate App",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp watch & http-server"
+  },
+  "keywords": [
+    "Jiff",
+    "Angular",
+    "Boilerplate",
+    "Gulp",
+    "Angular",
+    "Angular",
+    "Seed"
+  ],
+  "author": "Achint Verma",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.0.0",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uglify": "^2.0.0",
+    "http-server":"^0.9.0"
+  }
+}
