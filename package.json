@@ -4,7 +4,8 @@
   "description": "Jiff Boilerplate App",
   "main": "index.js",
   "scripts": {
-    "start": "gulp watch & http-server"
+    "start": "gulp watch & http-server",
+    "build":"gulp sass & gulp scripts & gulp angular"
   },
   "keywords": [
     "Jiff",
