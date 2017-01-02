@@ -50,6 +50,28 @@ gulp.task('scripts', function() {
 
 });
 
+
+/* 
+ * Combine all Angular files into single minified file to reduce HTTP requests
+ */
+
+var ng_files = [
+  './js/angular.min.js',
+  './js/angular-route.min.js',
+  './js/angular-resource.min.js'
+];
+
+gulp.task('angular', function() {
+  
+  console.log("Combining Angular files...");
+
+    gulp.src(ng_files)
+      .pipe(concat("lib.min.js"))
+      .pipe(stripDebug()) 
+      .pipe(uglify())
+      .pipe(gulp.dest("./dist/"));
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('js/*.js', ['scripts']);
