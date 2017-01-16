@@ -25,10 +25,6 @@ This is Angular Boilerplate app setup with SASS and Gulp. Folder structure based
        | dashboard.html
        | dashboard.scss
        | dashboard.js
-└─── details
-       | details.html
-       | details.scss
-       | details.js
 services
        | default.js
 package.json
@@ -44,3 +40,5 @@ index.html
 - Run `npm run start` to start web server and start gulp watchers
 - Web Server runs on `http://localhost:8080` 
 
+
+![Screenshot](/screenshot.png?raw=true "Dashboard")
