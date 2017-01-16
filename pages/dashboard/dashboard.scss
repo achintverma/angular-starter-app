@@ -1,36 +1,19 @@
 #dashboard{
 	display: flex;
-	align-items: flex-start;
-	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	height: 500px;
 
 	h1{
-		width: 100%;
-		padding: 20px;
+		width: 100%; 
 		font-weight: 100;
 		text-align: center;
+		margin-bottom: 10px;
 	}
 
-	.program{
-		width: 50%;
-		margin: auto;
-		text-align: center;
-		cursor: pointer;
-		text-decoration: none;
-		margin-bottom: 20px;
-
-		h2{
-			color: #fff;
-			font-size: 16px;
-			font-weight: 400;
-		}
-
-		img{
-			width: 80px;
-			transition: opacity 1s ease;
-		}
+	p{
+		opacity: 0.7;
+		font-weight: 300;
 	}
-
-	.program:hover{
-		opacity: 0.8;
-	} 
 }

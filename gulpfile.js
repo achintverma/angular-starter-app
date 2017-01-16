@@ -14,6 +14,8 @@ var cleanCSS    = require('gulp-clean-css');
  */
 
 var sass_files = [
+  './css/bootstrap/css/bootstrap.min.css',
+  './css/palette.scss', 
   './css/app.scss',
   './pages/**/*.scss' // include all individual page styles 
 ]
@@ -24,11 +26,11 @@ gulp.task('sass', function () {
     .pipe(concat("app.min.css"))
     .pipe(sass())
     .pipe(cleanCSS())
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./dist')); 
 });
 
 /* 
- * Combine all js files into single minified file
+ * Combine all js files into single minified file 
  * optimized for production 
  */
 

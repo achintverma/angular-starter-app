@@ -1,22 +1,16 @@
-# JIFF Angular 1.6 Boilerplate
-This is Angular Boilerplate app for JIFF. 
+# Angular 1.6 Starter App
+This is Angular Boilerplate app setup with SASS and Gulp. Folder structure based on best practices from Angular team. 
 
-### Conventions & Requirements
-- All controller-views should be isolated such that they are treated like components and can be re-used in other applications. (Please note that I was using JSON files as api endpoints and there was no clear distiction between programs and goals otherwise ideally services should be placed inside respective page folders).
-- SASS file for each view is separate, page wrapper is identified by #id to isolate page specific style definitions.
-- Implement Gulp to compile sass files, combine css and js files to make it ready for production.
-- Use of Flexbox CSS layout model
-- Use of native JS functions like map, filter, sort, reduce, find etc
-- Mobile first app - should look good on 360x640 resolution
-- Use native angular methods such as ng-repeat, ng-switch, ng-if, etc.
+### Conventions
+- Each component should be made as reusable component, with its style, markup and services together
+- Folders should be organized based on the component, not based on the type of files 
+- Use SASS processor to combine & minify CSS & JS
+
 
 ### Folder structure
 ```
 | css
         | app.scss
-| data
-        | program_blueprints.json
-        | goals.json
 | dist
         | app.min.js
         | app.min.css
@@ -36,8 +30,7 @@ This is Angular Boilerplate app for JIFF.
        | details.scss
        | details.js
 services
-       | programService.js
-       | goalService.js
+       | default.js
 package.json
 gulpfile.js
 index.html

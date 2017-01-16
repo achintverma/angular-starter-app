@@ -1,3 +1,9 @@
+/*
+ * This is a template for creating a service using angular module method. 
+ * Use the example below to create services 
+ *
+ */
+
 angular.module('programService', [])
 .service('programs', ['$http', function ($http) {
     
@@ -9,35 +15,8 @@ angular.module('programService', [])
      */
     this.getAll = function(){ 
 
-    	return $http.get('./data/program_blueprints.json').then(function(res){
-    		var unsorted_programs = res.data.program_blueprints;
-
-    		return unsorted_programs.sort(function(a,b){
-				return a.display_order - b.display_order;
-			});
-    	});
-    }
-
-    /*
-     * Get a program based on programId
-     * @param programId 
-     * @return Promise object  
-     */
-    this.getProgram = function(programId){
-
-    	return $http.get('./data/program_blueprints.json').then(function(res){
-    		var unsorted_programs = res.data.program_blueprints;
-
-    		unsorted_programs.sort(function(a,b){
-				return a.display_order - b.display_order;
-			});
-
-			this.sorted_programs = unsorted_programs;
-			return this.sorted_programs.find(function(p){
-	    		if(p.guid === programId)
-	    			return p;
-	    	});	
-
+    	return $http.get('URL HERE').then(function(res){
+    		return res.data;
     	});
     }
 

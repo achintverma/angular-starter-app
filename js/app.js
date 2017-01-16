@@ -1,7 +1,6 @@
 var jiffApp = angular.module('jiffApp', [
 	"ngRoute",
-	"dashboard",
-	"programDetail"
+	"dashboard"
 ]); 
 
 jiffApp.config(['$locationProvider' ,'$routeProvider',
@@ -12,9 +11,6 @@ jiffApp.config(['$locationProvider' ,'$routeProvider',
         when('/dashboard', {
           template: '<dashboard></dashboard>'
         }).
-        when('/details/:programId', {
-          template: '<program-detail></program-detail>'
-        }). 
         otherwise('/dashboard');
     }
 ]);
